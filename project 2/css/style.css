@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  background: rgb(222, 229, 235);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/background.jpg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  padding: 1rem;
+}
+.header .logo,
+.header .navbar a {
+  color: white;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header .navbar .items {
+  float: right;
+  margin-top: 1rem;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid white;
+  color: antiquewhite;
+  transition: color 0.3s ease-in-out;
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+
+.header,
+.fas {
+  padding-left: 1.2rem;
+  color: #f4f4f4;
+}
+
+/* .........utility clases........ */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.lg-heading {
+  font-size: 3.5rem;
+}
+
+.md-heading {
+  font-size: 2.2rem;
+}
+
+.text-red {
+  color: #e63946;
+}
+
+.text-light {
+  color: #f4f4f4;
+}
+
+.text-black {
+  color: #333;
+}
+
+.text-gray {
+  color: #555;
+}
+
+/* ....main content,,,,,, */
+
+.navbar {
+  position: relative;
+}
+
+.header-content {
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.header-content > p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.header-content > h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: white;
+  border-radius: 10rem;
+}
+
+.btn-secondry {
+  color: black;
+  width: 20%;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.829);
+  border-radius: 15px;
+  padding: 0rem 0rem;
+}
+
+.btn-primary:hover {
+  background-color: rgb(243, 237, 237);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondry:hover {
+  /* background: rgb(228, 228, 215); */
+  background: rgba(209, 203, 203, 0.63);
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............section......... */
+
+.showcase {
+  background: #ddd;
+  padding: 10rem 0;
+}
+
+.row {
+  height: 450px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1 {
+  margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box,
+.row3 .img-box {
+  float: left;
+  width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box,
+.row3 .text-box {
+  float: right;
+  width: 50%;
+}
+
+.row .img-box {
+  height: 100%;
+}
+
+.row .text-box {
+  padding: 3rem;
+}
+
+.row .text-box h2 {
+  text-transform: uppercase;
+}
+
+.row .img-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 
+.........../.features./....... */
+
+.cards {
+  background: #fff;
+  padding-bottom: 5rem;
+}
+
+.guide {
+  padding-top: 3.5rem;
+}
+
+.cards .cards-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.65);
+}
+
+.cards img {
+  width: 20rem;
+  height: 13.2rem;
+  object-fit: cover;
+}
+
+.cards p {
+  font-weight: bold;
+}
+
+/* ...../footer/..... */
+
+.feature-head {
+  padding-top: 5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.feature-head2 {
+  font-size: 2rem;
+  margin-top: -1.8rem;
+}
+
+.pnight {
+  margin-bottom: 5rem;
+}
+
+.features {
+  margin-top: 10rem;
+  background: #fff;
+  display: flex;
+}
+
+.fflex {
+  display: flex;
+  /* border: 2px solid green; */
+  margin: 11rem 15rem 11rem 15rem;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.281);
+}
+
+.foot {
+  background: #263238;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.fab {
+  padding-top: 1.2rem;
+  margin: 1.5rem;
+  font-size: 3.5rem;
+}
+
+.travel {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.foot .fas {
+  padding-left: 0.2rem;
+}
+
+/* ....../media query/........ */
+
+@media (max-width: 500px) {
+  html {
+    /* font-size: 8px; */
+    font-size: 50%;
+  }
+
+  .navbar .items,
+  .logo {
+    float: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .header-content > h1 {
+    font-size: 2.5rem;
+  }
+
+  .row {
+    height: auto;
+    width: 100%;
+  }
+
+  .row .img-box,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row .img-box {
+    height: 50%;
+  }
+
+  .cards-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-flex img {
+    width: 100%;
+    height: 24.6rem;
+  }
+
+  .cards-flex p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  .card1:hover,
+  .card2:hover,
+  .card3:hover,
+  .card4:hover,
+  .card5:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    /* font-size: 8px; */
+    font-size: 50%;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .navbar .items,
+  .logo {
+    float: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .header-content > h1 {
+    font-size: 2.5rem;
+  }
+
+  .row {
+    height: auto;
+    width: 100%;
+  }
+
+  .row .img-box,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row .img-box {
+    height: 50%;
+  }
+
+  .cards-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-flex img {
+    width: 100%;
+    height: 24.6rem;
+  }
+
+  .cards-flex p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+
+  .card1:hover,
+  .card2:hover,
+  .card3:hover,
+  .card4:hover,
+  .card5:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .row .text-box h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    height: 90vmax;
+  }
+}

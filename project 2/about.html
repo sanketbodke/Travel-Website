@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <h1 class="logo lg-heading">
+            my travel<i class="fas fa-plane-departure"></i>
+          </h1>
+          <ul class="items">
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="./about.html">About</a></li>
+            <li class="item"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="about-bg">
+      <div class="about container">
+        <h1 class="about-head">I am my travel</h1>
+        <p class="aboutp sm-heading text-gray">
+          We always try our best to make your journey pleasant and enjoyable.
+        </p>
+      </div>
+    </div>
+    <div class="about-mainbg">
+      <div class="about-main container">
+        <div class="years-about">
+          <h1>05&plus;</h1>
+          <p>Years of experience</p>
+        </div>
+        <div class="place-about">
+          <h1>150&plus;</h1>
+          <p>Total places</p>
+        </div>
+        <div class="users-about">
+          <h1>2M&plus;</h1>
+          <p>Happy users</p>
+        </div>
+      </div>
+    </div>
+    <div class="end-aboutbg">
+      <h1 class="logo lg-heading container">my travel<sup>TM</sup></h1>
+      <div class="end-about container">
+        <div class="services">
+          <h2 class="servicesend">Services</h2>
+          <p class="serviceslist text-gray">camping</p>
+          <p class="serviceslist text-gray">Guidance in traveling</p>
+          <p class="serviceslist text-gray">Hotels fot travelers</p>
+          <p class="serviceslist text-gray">Agro tourism</p>
+          <p class="serviceslist text-gray">Free Transportation</p>
+        </div>
+        <div class="quicklinks">
+          <h2 class="quicklinkslists">Quick links</h2>
+          <p class="home text-gray">Home</p>
+          <p class="about text-gray">About</p>
+          <p class="contact text-gray">Contact</p>
+        </div>
+        <div class="links">
+          <h2 class="linkslists">Social</h2>
+          <p class="linkedin text-gray">
+            <i class="fab fa-linkedin"></i>
+            Linkedin
+          </p>
+          <p class="twitter text-gray">
+            <i class="fab fa-twitter"></i>
+            Twitter
+          </p>
+          <p class="github text-gray">
+            <i class="fab fa-github"></i>
+            Github
+          </p>
+          <p class="instagram text-gray">
+            <i class="fab fa-instagram-square"></i>
+            Insatgram
+          </p>
+          <p class="facebook text-gray">
+            <i class="fab fa-facebook"></i>
+            Facebook
+          </p>
+        </div>
+        <div class="company-info">
+          <h2 class="company-address">Address</h2>
+          <p class="c-address text-gray">
+            S1-12, S.B Road, Hanuman nagar,<br />Pune-411016, MH, India.
+          </p>
+          <h2 class="number-mob">Mobile</h2>
+          <p class="number text-gray">&plus;9637333871</p>
+          <h2 class="email">Email</h2>
+          <p class="email-id text-gray">mytravel1226@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-start">
+      <div class="contact-content container">
+        <p class="jstart">What are you waiting for, reach us right now.</p>
+        <a href="../project 2/contact.html" class="jend"> contact us </a>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>

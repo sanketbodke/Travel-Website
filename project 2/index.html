@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <h1 class="logo lg-heading">
+            my travel<i class="fas fa-plane-departure"></i>
+          </h1>
+          <ul class="items">
+            <li class="item"><a href="./index.html">Home</a></li>
+            <li class="item"><a href="./about.html">About</a></li>
+            <li class="item"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content">
+        <h1 class="lg-heading text-light main-heading">travel with us</h1>
+        <p class="text-light font-dark">check out our top destinations</p>
+        <a href="#explore-places" class="btn btn-primary text-red md-heading"
+          >Explore Places</a
+        >
+      </div>
+    </header>
+    <section class="showcase" id="explore-places">
+      <div class="container">
+        <div class="row row1">
+          <div class="img-box">
+            <img src="./img/raigad2.jpg.jpg" alt="error" />
+          </div>
+          <div class="text-box">
+            <h2 class="lg-heading text-black">raigad fort, maharashtra</h2>
+            <p class="text-gray">
+              Raigad is a hill fort situated in Mahad, Raigad district of
+              Maharashtra, India. It is one of the strongest fortresses on the
+              Deccan Plateau. chatrapati Shivaji seized the fort in 1656, then
+              known as the fort of Rairi from Chandraraoji More, the king of
+              Jawali. Shivaji renovated and expanded the fort of Rairi and
+              renamed it as Raigad (King's Fort). It became the capital 
+              Shivaji's Maratha kingdom.
+            </p>
+            <a href="./about.html" class="btn btn-secondry">More</a>
+          </div>
+        </div>
+        <div class="row row2">
+          <div class="img-box">
+            <img src="./img/goa2.jpg" alt="error" />
+          </div>
+          <div class="text-box">
+            <h2 class="lg-heading text-black">Palolem Beach, goa</h2>
+            <p class="text-gray">
+              Palolem Beach is largely unspoiled and is inhabited by both local
+              fishermen and by foreign tourists who live in shacks along the
+              shore or in the main village itself. It is about one mile
+              (approximately 1.61 km) long and is crescent-shaped; one can view
+              the entire beach from either end. Both ends of the beach consist
+              of rocks jutting out into the sea.
+            </p>
+            <a href="./about.html" class="btn btn-secondry">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cards">
+      <div class="container">
+        <h1 class="guide lg-heading">Explore Withlocals</h1>
+        <h3 class="guide2 md-heading">
+          All of our tours and activities are: • Private • Personalized • With
+          the local of your choice
+        </h3>
+        <div class="cards-flex">
+          <div class="card1">
+            <img src="./img/food-tour.jpg.jpg" alt="food" />
+            <p>Food tours</p>
+          </div>
+          <div class="card2">
+            <img src="./img/day-trip.jpg.jpg" alt="day" />
+            <p>Day trip</p>
+          </div>
+          <div class="card3">
+            <img src="./img/walking-tour.jpg.jpg" alt="walk" />
+            <p>Walking tour</p>
+          </div>
+          <div class="card4">
+            <img src="./img/bike-tour.jpg.jpg" alt="bike" />
+            <p>Bike tour</p>
+          </div>
+          <div class="card5">
+            <img src="./img/night-tour.jpg.jpg" alt="night" />
+            <p>Night tour</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="container">
+        <div class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <p class="travel">
+            my travel<i class="fas fa-plane-departure"></i> &copy; 2021, ALL
+            Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
